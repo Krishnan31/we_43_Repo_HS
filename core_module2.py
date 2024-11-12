@@ -1,3 +1,4 @@
+#Krishnan
 from pyspark.sql.session import SparkSession
 spark=SparkSession.builder.master('local').appName("Krishnan").config("spark.executor.cores", "2").enableHiveSupport().getOrCreate()
 izsc=spark.sparkContext
