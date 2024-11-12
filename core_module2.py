@@ -1,4 +1,4 @@
-#Krishnan
+#Krishnan We_43
 from pyspark.sql.session import SparkSession
 spark=SparkSession.builder.master('local').appName("Krishnan").config("spark.executor.cores", "2").enableHiveSupport().getOrCreate()
 izsc=spark.sparkContext
@@ -133,9 +133,10 @@ print(trans_rdd.countByKey())
 print(trans_rdd.countByValue())
 print(transa_rdd.lookup(4000001))
 
+#EOF
 
 
-# func=lambda x : (int(x[0]),str(x[1]),int(x[3]))
+
 
 
 
